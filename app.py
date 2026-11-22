@@ -1,10 +1,12 @@
+
+
 from flask import Flask
 
-app = Flask(**name**)
+app = Flask(__name__)
 
 @app.route("/")
 def home():
-return "Hello from Flask and Git!"
+    return "Hello from Flask and Git!"
 
-if **name** == "**main**":
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
