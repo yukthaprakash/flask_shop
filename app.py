@@ -8,3 +8,6 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+@app.route("/booking")
+def booking():
+    return "Booking Page"
